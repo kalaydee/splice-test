@@ -9,3 +9,18 @@
     color: #fff;
 }
 /* navbar menu links color */
+
+
+/*slider center element*/
+.orbit-caption {
+    width: 41.6%;
+    height: 214px;
+    margin-bottom: 12.1%;
+    padding: 1rem;
+    color: #fefefe;
+    margin-left: 29.3%;
+    margin-right: 29.1%;
+    margin-top: 6.4%;
+    opacity: 0.95;
+    background: #FFFFFF;
+}
