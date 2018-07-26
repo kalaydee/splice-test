@@ -1,0 +1,11 @@
+/* navbar menu background */
+.top-bar, .top-bar ul {
+    background-color: #003578;
+}
+/* navbar menu background */
+
+/* navbar menu links color */
+.top-bar, .top-bar li a {
+    color: #fff;
+}
+/* navbar menu links color */
