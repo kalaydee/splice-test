@@ -13,7 +13,7 @@
 	letter-spacing: 1px;
 	text-align: center;
 /* navbar menu links color */
-
+}
 
 /*slider center element*/
 .orbit-caption {
@@ -27,4 +27,44 @@
     margin-top: 6.4%;
     opacity: 0.95;
     background: #FFFFFF;
+}
+/*slider center element*/
+
+/*slider center white element*/
+.yourself1{
+    font-family: Montserrat-SemiBold;
+    font-size: 16px;
+    color: #ABABAB;
+    letter-spacing: 0.44px;
+    text-align: center;
+    line-height: 37px;
+}
+/*slider center white element*/
+
+/*slider center white element*/
+.yourself2{
+    font-family: Average-Regular;
+    font-size: 34px;
+    color: #003578;
+    letter-spacing: 0.35px;
+    text-align: center;
+    line-height: 37px;
+}
+/*slider center white element*/
+
+
+
+ .yourself3{   
+    font-family: Montserrat-Regular;
+    font-size: 16px;
+    color: #202020;
+    letter-spacing: 0.5px;
+    text-align: center;
+    line-height: 29px;
+}
+
+
+.headerlink{
+    background: #003578;
+    border-radius: 80px;
 }
