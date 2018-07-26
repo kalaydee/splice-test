@@ -6,6 +6,10 @@
 
 /* navbar menu links color */
 .top-bar, .top-bar li a {
-    color: #fff;
-}
+    
+    font-family: Montserrat-SemiBold;
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	text-align: center;
 /* navbar menu links color */
