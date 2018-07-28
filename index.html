@@ -4,98 +4,286 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    
+    <title>Splice Test - VueJS</title>
+    
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
    
   <body>
-
-    <!--navigation-->
-      <div class="title-bar" data-responsive-toggle="example-animated-menu" data-hide-for="medium">
-        <button class="menu-icon" type="button" data-toggle></button>
-        <div class="title-bar-title">Menu</div>
-      </div>
-
-      <div class="top-bar" id="example-animated-menu" data-animate="hinge-in-from-top spin-out">
-        <div class="top-bar-left">
-          <ul class="dropdown menu align-center" data-dropdown-menu>                       
-            <li><a href="#">FOOD</a></li>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">GIFT</a></li>
-            <li><a href="#">CATERING</a></li>
-            <li><a href="#">RECIPES</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">STORES</a></li>
-          </ul>
-        </div>
-      </div>
-      <!--/navigation-->
-     
-
-
-      <!--headerImage-->
-      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-        <div class="orbit-wrapper">
-          <div class="orbit-controls">
-            <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span><img width="24.7px" height="45.6px" src="assets/arrowLeft.svg" alt="Arrow left"></button>
-            <button class="orbit-next"><span class="show-for-sr">Next Slide</span><img width="24.7px" height="45.6px" src="assets/arrowRight.svg" alt="Arrow left"></button>
+    <div id="app">
+      <!-- header-cart -->
+      <div class="head-menu">
+        <div class="grid-container">
+          <div class="grid-x grid-padding-x">
+            <div class="large-6 medium-6 cell menu-link-container">
+              <ul class="menu icons icon-left menu-link">
+                <li class="menu-link"><a href="#">FRANCHISE</a></li>
+                <li class="menu-link"><a href="#">CORPORATE GIFTING</a></li>
+                <li class="menu-link"><a href="#">WHOLESALE</a></li>
+                <li class="menu-link"><a href="#">CONTACT</a></li>
+              </ul>
+            </div>
+            <div class="large-6 medium-6 cell">
+              <ul class="menu icons icon-left align-right menu-link">
+                <li><a href="#"><span>HI, JANE BROWN</span></a></li>
+                <li><a href="#"><img src="assets/basket.svg"><span>BASKET {{ cartItems.length }}</span></a></li>
+              </ul>
+            </div>
           </div>
-          <ul class="orbit-container">
-            <li class="is-active orbit-slide">
-              <figure class="orbit-figure">
-                <img class="orbit-image" src="assets/headerImage.jpg" alt="Space">                     
-                         <figcaption class="orbit-caption">
-                           <center>
-                              <span class="yourself1">&#8212; TREAT YOURSELF TO &#8212;</span><br>
-                              <span class="yourself2">LOCAL PANTRY FAVOURITES</span><br>
-                              <span class="yourself3">Buy two jams and get a third FREE.</span><br>
-                              <a class="headerlink" href="#">SHOP NOW</a>
-                           </center>                             
-                          </figcaption>
-              </figure>
-            </li>             
-          </ul>
-        </div>         
+        </div>
       </div>
-      <!--/headerImage-->
+
+      <div class="head-logo">
+        <div class="grid-container">
+          <div class="grid-x grid-padding-x" style="height:120px">
+            <div class="large-2 medium-2 cell center-align">
+              <img src="assets/logo.png">
+            </div>
+            <div class="large-4 medium-4 cell center-align">
+              <span class="search-style"><input class="search-style-input" type="search" placeholder="Search Products"></span>
+            </div>
+            <div class="large-1 medium-1 cell center-align icon-style">
+              <img src="assets/delivery.svg">
+            </div>        
+            <div class="large-2 medium-2 cell center-align text-align" style="line-height: 1; text-align: left;">
+            <div >
+              <span class="title-head">FREE DELIVERY</span><br>
+              <span class="title-head-sub">On orders over R500</span> 
+            </div>
+            </div>
+            <div class="large-1 medium-1 cell center-align icon-style"> 
+              <img src="assets/call.svg">
+            </div>        
+            <div class="large-2 medium-2 cell center-align text-align" style="line-height: 1; text-align: left;">
+              <span class="title-head">021 886 6179</span><br>
+              <span class="title-head-sub">Mon - Fri, 8am - 4pm</span>
+            </div>
+          </div>
+          </div>
+      </div>
+
+      <!--navigation-->
+        <div class="title-bar" data-responsive-toggle="example-animated-menu" data-hide-for="medium">
+          <button class="menu-icon" type="button" data-toggle></button>
+          <div class="title-bar-title">Menu</div>
+        </div>
+
+        <div class="top-bar" id="example-animated-menu" data-animate="hinge-in-from-top spin-out">
+          <div class="top-bar-left">
+            <ul class="dropdown menu align-center" data-dropdown-menu>                       
+              <li><a href="#">FOOD</a></li>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">GIFT</a></li>
+              <li><a href="#">CATERING</a></li>
+              <li><a href="#">RECIPES</a></li>
+              <li><a href="#">BLOG</a></li>
+              <li><a href="#">STORES</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--/navigation-->
        
-<br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br>
 
-      <!--Services--> 
-        <div class="grid-x">
-                    
-                <div class="large-6 medium-6 cell bg1">
-                    <span class="bg1-caption">YOUR PERFECT TEATIME TREAT</span>
-                </div>
-              <div class="large-6 medium-6 cell bg2">
-                    <span class="bg2a-caption">KITCHEN ESSENTIAL</span>
-                    <span class="bg2b-caption">CERAMIC MUGS</span>
-                </div>
+
+        <!--headerImage-->
+        <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+          <div class="orbit-wrapper">
+            <div class="orbit-controls">
+              <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span><img width="24.7px" height="45.6px" src="assets/arrowLeft.svg" alt="Arrow left"></button>
+              <button class="orbit-next"><span class="show-for-sr">Next Slide</span><img width="24.7px" height="45.6px" src="assets/arrowRight.svg" alt="Arrow left"></button>
+            </div>
+            <ul class="orbit-container">
+              <li class="is-active orbit-slide">
+                <figure class="orbit-figure">
+                  <img class="orbit-image" src="assets/headerImage.jpg" alt="Space">                     
+                  <figcaption class="orbit-caption">
+                    <center>
+                      <span class="yourself1">&#8212; TREAT YOURSELF TO &#8212;</span><br>
+                      <span class="yourself2">LOCAL PANTRY FAVOURITES</span><br>
+                      <span class="yourself3">Buy two jams and get a third FREE.</span><br>
+                      <a class="headerlink" href="#">SHOP NOW</a>
+                    </center>                             
+                  </figcaption>
+                </figure>
+              </li>             
+            </ul>
+          </div>         
+        </div>
+        <!--/headerImage-->
+        
+        <!-- Products Section -->
+        <div class="grid-container" style="padding: 60px 0;">
+          <div class="grid-x grid-padding-x">
+            <div class="large-3 medium-6 small-12 cell main-position" v-for="item in items">
+              <img class="float-center" :src="item.image">
+              <span class="label primary pos-bottom">RSD{{ item.price }}</span>
+              <div class="product-description">
+                <p class="item-title">{{ item.title }}</p>
+                <p class="item-subtitle">{{ item.subtitle }}</p>
+                <button @click="addToCart(item)" class="success button btn-to-cart">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Products Section -->
+
+        <!--Services--> 
+        <div class="grid-x">  
+          <div class="large-6 medium-6 cell bg1">
+            <span class="bg1-caption">YOUR PERFECT TEATIME TREAT</span>
+            <div class="redO"></div>
+          </div>
+          <div class="large-6 medium-6 cell bg2" style="overflow: hidden;">
+            <span class="bg2a-caption">KITCHEN ESSENTIAL</span>
+            <span class="bg2b-caption">CERAMIC MUGS</span>
+            <div class="redO"></div>
+          </div>
         </div>
         <div class="grid-x">
-                <div class="large-6 medium-6 cell bg3">
-                    <div class="float-right">
-                    <span class="bg3-title">GIFTING<br>MADE EASY</span><br>
-                    <span class="bg3-content">Beautiful product<br>combinations to suit every<br>occasion and budget.</span><br>
-                    <span><a class="bg3-btn" href="#">SHOP HAMPERS</a></span><br>
-                    <span class="bg3-sub"><img src="assets/gifting.svg">&nbsp;&nbsp;<u><a href="#">Corporate gifting</a></u></span>
-                </div>
-                </div>
-                <div class="large-6 medium-6 cell bg4">
-                    <span class="bg4a-caption">COMFORTING</span>
-                    <span class="bg4b-caption">WINTER WARMERS</span>
-                </div>
+          <div class="large-6 medium-6 cell bg3" style="overflow: hidden;">
+            <div class="float-right">
+              <span class="bg3-title">GIFTING<br>MADE EASY</span><br>
+              <span class="bg3-content">Beautiful product<br>combinations to suit every<br>occasion and budget.</span><br>
+              <span><a class="bg3-btn" href="#">SHOP HAMPERS</a></span><br>
+              <span class="bg3-sub"><img src="assets/gifting.svg">&nbsp;&nbsp;<u><a href="#">Corporate gifting</a></u></span>
+            </div>
+          </div>
+          <div class="large-6 medium-6 cell bg4" style="overflow: hidden;">
+            <span class="bg4a-caption">COMFORTING</span>
+            <span class="bg4b-caption">WINTER WARMERS</span>
+            <div class="redO"></div>
+          </div>
         </div>
+
+        <!--FOOTER-->
+        <div class="grid-x">
+                    <div class="large-1 medium-1 cell">
+                    </div>
+                 
+                        <div class="large-2 medium-2 cell">
+                            <center>
+                               <a href="http://foundation.zurb.com/docs"><img src="assets/logo.png"></a><br>
+                               
+                               <img src="assets/facebook.svg" width="31px;">&nbsp;<img src="assets/twitter.svg" width="31px;">&nbsp;<img src="assets/pinterest.svg" width="31px;">&nbsp;<img src="assets/instagram.svg" width="31px;">
+                              
+                              </center>
+                        </div>
+                        <div class="large-2 medium-2 cell">
+                                <p><span style="color: #272727;">COMPANY</span></p>
+                    <a href="#" style="letter-spacing: 0.5px; color: #505050; font-size: 12px;">About</a><br>
+                    <a href="#" style="letter-spacing: 0.5px; color: #505050; font-size: 12px;">Our Cafe</a><br>
+                    <a href="#" style="letter-spacing: 0.5px; color: #505050; font-size: 12px;">Careers</a><br>
+                    <a href="#" style="letter-spacing: 0.5px; color: #505050; font-size: 12px;">Menu</a>
+                        </div>
+                      
+                 
+                        <div class="large-2 medium-2 cell">
+                            <p><span style="color: #272727;">WHOLESALE</span></p>
+                  <a href="#" style="letter-spacing: 0.5px; color: #505050; font-size: 12px;">South Africa</a><br>
+                  <a href="#" style="letter-spacing: 0.5px; color: #505050; font-size: 12px;">International</a><br>
+                  <a href="#" style="letter-spacing: 0.5px; color: #505050; font-size: 12px;">Corporate Gifting</a><br>
+                  <a href="#" style="letter-spacing: 0.5px; color: #505050; font-size: 12px;">Hospitality</a>
+                        </div>
+                        <div class="large-2 medium-2 cell">
+                              <p><span style="color: #272727;">SUPPORT</span></p>
+                  <a href="#" style="letter-spacing: 0.5px; color: #505050; font-size: 12px;">Our Stockists</a><br>
+                  <a href="#" style="letter-spacing: 0.5px; color: #505050; font-size: 12px;">Shipping and Delivery</a><br>
+                  <a href="#" style="letter-spacing: 0.5px; color: #505050; font-size: 12px;">T's & C's</a><br>
+                  <a href="#" style="letter-spacing: 0.5px; color: #505050; font-size: 12px;">FAQ's</a>
+                        </div>
+                        <div class="large-2 medium-2 cell">
+                            <p><span style="color: #272727;">CONTACT</span></p>
+                  <span style="color: #003578 !important;"><img src="assets/call.svg" width="11.9px"></span>&nbsp;<span style="letter-spacing: 0.5px; color: #505050; font-size: 12px;">+27 21 888 2999</span><br>
+                  <img src="assets/email.svg" width="11.9px">&nbsp;<span style="letter-spacing: 0.5px; color: #505050; font-size: 12px;">info@bakery.co.za</span><br>
+                  <img src="assets/locator.svg" width="11.9px">&nbsp;<span style="letter-spacing: 0.5px; color: #505050; font-size: 12px;">Store Locator</span><br>
+                  <img src="assets/franchise.svg" width="11.9px">&nbsp;<span style="letter-spacing: 0.5px; color: #505050; font-size: 12px;">Franchise Enquiry</span>
+                        </div>
+                        <div class="large-1 medium-1 cell">
+                        </div>
+                      
+        </div>
+          <!--/FOOTER-->
         <!--/Services-->
-
+        </div>
    
      
+    <script type="text/javascript">
+      const product = [
+        { id: 1, title: 'SWEETS, NUTS & CHOCOLATES', subtitle: 'Berry & Balsamic Bon Bons', price: 36.00, qty: 1, image: 'assets/product1.jpg' },
+        { id: 2, title: 'PASTA, SAUCES & CONDIMENTS', subtitle: 'Sundried Tomatoes, Feta & Bell Peppers', price: 72.00, qty: 1, image: 'assets/product2.jpg' },
+        { id: 3, title: 'SAVOURY SNACKS', subtitle: 'Vegetable Crisps', price: 22.00, qty: 1, image: 'assets/product3.jpg' },
+        { id: 4, title: 'HAMPERS', subtitle: 'Melissa’s Family man', price: 292.00, qty: 1, image: 'assets/product4.jpg' }
+      ];
 
+      function formatNumber(n, c, d, t){
+        var c = isNaN(c = Math.abs(c)) ? 2 : c, 
+            d = d === undefined ? '.' : d, 
+            t = t === undefined ? ',' : t, 
+            s = n < 0 ? '-' : '', 
+            i = String(parseInt(n = Math.abs(Number(n) || 0).toFixed(c))), 
+            j = (j = i.length) > 3 ? j % 3 : 0;
+        return s + (j ? i.substr(0, j) + t : '') + i.substr(j).replace(/(\d{3})(?=\d)/g, '$1' + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : '');
+      };
+
+      Vue.filter('formatCurrency', function (value) {
+        return formatNumber(value, 2, '.', ',');
+      });
+
+      Vue.component('shopping-cart', {
+        props: ['items'],
+        computed: {
+          Total: function() {
+            var total = 0;
+            this.items.forEach(item => {
+              total += (item.price * item.qty);
+            });
+            return total;
+          }
+        },
+
+        methods: {
+          removeItem(index) {
+            this.items.splice(index, 1)
+          }
+        }
+      });
+
+      const vm = new Vue({
+        el: '#app',
+        
+        data: {
+          cartItems: [],
+          items : product
+        },
+        
+        methods: {
+          addToCart(itemToAdd) {
+            var found = false;
+
+            // Check if the item was already added to cart
+            // If so them add it to the qty field
+            this.cartItems.forEach(item => {
+              if (item.id === itemToAdd.id) {
+                found = true;
+                item.qty += itemToAdd.qty;
+              }
+            });
+
+            if (found === false) {
+              this.cartItems.push(Vue.util.extend({}, itemToAdd));
+            }
+            
+            itemToAdd.qty = 1;
+          }
+        }
+      });
+    </script>
     <script src="assets/js/vendor/jquery.js"></script>
     <script src="assets/js/vendor/what-input.js"></script>
     <script src="assets/js/vendor/foundation.js"></script>
